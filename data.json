@@ -1,32 +1,63 @@
-{
-    "data": {
-        "title": "JavaScript Flashcards",
-        "cards": [
-            {
-                "question": "What language are Express apps written in?",
-                "hint": "It starts with a \"J\"",
-                "answer": "JavaScript"
-            },
-            {
-                "question": "What is one way a website can store data in a user's browser?",
-                "hint": "They are delicious with milk",
-                "answer": "Cookies"
-            },
-            {
-                "question": "What is a common way to shorten the response object's name inside middleware?",
-                "hint": "It has the same abbreviation as \"resolution\"",
-                "answer": "res"
-            },
-            {
-                "question": "How many different values can booleans have?",
-                "hint": "Think: binary",
-                "answer": "2"
-            },
-            {
-                "question": "Which HTML element can contain JavaScript?",
-                "hint": "It starts with an \"s\"",
-                "answer": "<script>"
-            }
-        ]
-    }
+{ "projects": [
+        {
+            "project_name": "Random Quote Generator",
+            "id": "0",
+            "description": "This app randomly chooses between one of three phrases and cycles between each one on a timer. The user can also click a button to change the quote.",
+            "technologies": ["JavaScript", "python", "Drupal"],
+            "live_link": "https://kshields51.github.io/tech-degree-project-1/",
+            "github_link": "https://github.com/kshields51/tech-degree-project-1",
+            "image_urls": [
+                {"landing": "random-quote-landing.PNG"},
+                {"profile": "random-quote-profile.PNG"} 
+                ]
+        },
+        {
+            "project_name": "Dynamic Pagination",
+            "id": "1",
+            "description": "I created the pagination for a webpage of profiles that works for any number of users. It will always display 10 profiles on the screen, and pages are added dynamically depending on the total number of profiles.",
+            "technologies": ["JavaScript"],
+            "live_link": "https://kshields51.github.io/Pagination-and-Filtering/",
+            "github_link": "https://github.com/kshields51/Pagination-and-Filtering",
+            "image_urls": [
+                {"landing": "pagination-landing.PNG"},
+                {"profile": "pagination-profile.PNG"} 
+                ]
+        },
+        {
+            "project_name": "Interactive Form With Dynamic Validation",
+            "id": "2",
+            "description": "Here, I created an interactive webform using jQuery for a fictional developer conference. Users choose a T-shirt, a variety of classes, and enter thier payment information. The form keeps track of the total cost of each course checked, allows users to dynamically add thier interest using a generated text box when Other is chosen, and dynamically changes input fields depending on what type of payment the user chooses. Also includes form validation that alerts users when they input a value that cannot be submitted.",
+            "technologies": ["JavaScript", "jQuery", "Regular Expressions", "HTML"],
+            "live_link": "https://kshields51.github.io/interactive-form-v1/",
+            "github_link": "https://github.com/kshields51/interactive-form-v1",
+            "image_urls": [
+                {"landing": "interactive-form-landing.PNG"},
+                {"profile": "interactive-form-profile.PNG"} 
+                ]
+        },
+        {
+            "project_name": "Object Oriented Programming Game",
+            "id": "3",
+            "description": "This is a fun hangman-style game where users can try and guess a hidden phrase. The app keeps track of user guesses, adds phrases dynamically, and checks win or loss state using object-oriented programming.",
+            "technologies": ["JavaScript", "Object-Oriented Programming"],
+            "live_link": "https://kshields51.github.io/oop_game_v1/",
+            "github_link": "https://github.com/kshields51/oop_game_v1",
+            "image_urls": [
+                {"landing": "phrase-hunter-landing.PNG"},
+                {"profile": "phrase-hunter-profile.PNG"} 
+                ]
+        },
+        {
+            "project_name": "Public API Profile Generator",
+            "id": "4",
+            "description": "This app uses AJAX to request JSON from a random profile generator site to randomly populate a set of employee profiles each time the page loads. Each employee profile, when clicked, shows information that is parsed from the JSON file.",
+            "technologies": ["JavaScript", "AJAX", "JSON"],
+            "live_link": "https://kshields51.github.io/public_api_request-v1/",
+            "github_link": "https://github.com/kshields51/public_api_request-v1",
+            "image_urls": [
+                {"landing": "public-api-landing.PNG"},
+                {"profile": "public-api-profile.PNG"} 
+                ]
+        }
+    ]
 }
