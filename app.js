@@ -2,9 +2,9 @@ const express = require('express'); // variable that holds express instance
 
 const app = express(); // returns express application
 
-app.use('/static', express.static('public'));
-app.use(express.static('images'))
-const data = require('./data.json')
+app.use('/static', express.static('public')); // links to the public folder where the css is stored
+app.use('/static2', express.static('images')) // links to the folder where the images are saved
+const data = require('./data.json') //links to the JSON file where the data is stored
 
 
 
@@ -20,19 +20,31 @@ app.get('/about', (req, res) => { //another route... the get method is used to h
     res.render('about')
 });
 
-app.get('/project/:id', (req, res) => {
+
+app.get('/project/:id', (req, res) => { //a route that dynamically changes depending on the req.params.id which corresponds to the id in the JSON file. This makes each page show a different project
     res.render('project', {projectName: data.projects[req.params.id].project_name,
-    description: data.projects[req.params.id].description, technologies: data.projects[0].technologies,
+    description: data.projects[req.params.id].description, technologies: data.projects[req.params.id].technologies,
 githubLink: data.projects[req.params.id].github_link, liveLink: data.projects[req.params.id].live_link, profileImage: data.projects[req.params.id].image_urls[1].profile});
 });
 
 
 
-
+app.use((req, res, next) => { //this throws a 404 error if a page that does not exist is accessed
+    const err = new Error ('Sorry, there was an error'); //creates the error object
+    err.status = 404; //sets the status
+    next(err);
+})
 
 
 //view 4 will be pointing toward some kind of friendly error
+app.use((err, req, res, next) => {
+    res.locals.error = err; //creates the error object
+    console.log('Sorry, there was an error') //prints an errror to the console
+    res.render('error', err); // new route with the name error. second parameter is the error object
+    
 
+
+})
 
 
 

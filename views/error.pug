@@ -1,0 +1,6 @@
+extends layout
+//- this extends the layout and prints to the screen the error message, the status, and the stack.
+block content
+    h1= error.message
+    h2= error.status
+    pre= error.stack

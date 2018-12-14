@@ -32,7 +32,7 @@
             "github_link": "https://github.com/kshields51/interactive-form-v1",
             "image_urls": [
                 {"landing": "interactive-form-landing.PNG"},
-                {"profile": "interactive-form-profile.PNG"} 
+                {"profile": "interactive-form-red-profile.PNG"} 
                 ]
         },
         {
@@ -51,7 +51,7 @@
             "project_name": "Public API Profile Generator",
             "id": "4",
             "description": "This app uses AJAX to request JSON from a random profile generator site to randomly populate a set of employee profiles each time the page loads. Each employee profile, when clicked, shows information that is parsed from the JSON file.",
-            "technologies": ["JavaScript", "AJAX", "JSON"],
+            "technologies": ["JavaScript", "JSON"],
             "live_link": "https://kshields51.github.io/public_api_request-v1/",
             "github_link": "https://github.com/kshields51/public_api_request-v1",
             "image_urls": [

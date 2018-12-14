@@ -14,17 +14,14 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            //-img.thumbnail(src= 'me.jpg')
+            img.thumbnail(src='/static2/me.jpg')
           .cell.auto
 
-            //- Add your name here.
             h5 Kevin Shields
 
-            //- Add text here to describe who you are, what you do, and why you are so aweome.
             p.text-light
               | I am a javascript TreeHouse Techdegree graduate looking for work as a junior developer
 
-            //- Add about page route to the href below. 
             a(href='/about') Learn More →
 
     .off-canvas-content(data-off-canvas-content='')
@@ -32,7 +29,6 @@ html(class="no-js" lang="en" dir="ltr")
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
 
-          //- Add your name here.  This is for the mobile screen sized version.
           span.title-bar-title Kevin Shields
       block content
         
@@ -42,3 +38,5 @@ html(class="no-js" lang="en" dir="ltr")
   script(src='/static/js/vendor/what-input.js')
   script(src='/static/js/vendor/foundation.js')
   script(src='/static/js/scripts.js')
+
+  //-this page creates the sidebar that has my name and a small description. It also has a link to the about page in it.
